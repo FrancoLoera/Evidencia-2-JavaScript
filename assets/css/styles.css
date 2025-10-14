@@ -1,0 +1,85 @@
+:root {
+    --primary: #34324c;
+    --primary-dark: #1e1c2b;
+    --primary-light: #656284;
+    --secondary: #deb64b;
+    --secondary-dark: #af903a;
+    --secondary-light: #efd591;
+    --text: #333;
+    --text-light: #F8F8F8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: 'Poppins', 'Arial';
+}
+
+.pl-colored {
+    color: var(--primary-light);
+}
+
+.sl-colored {
+    color: var(--secondary-light);
+}
+
+.p-colored {
+    color: var(--primary);
+}
+
+.s-colored {
+    color: var(--secondary);
+}
+
+.pd-colored {
+    color: var(--primary-dark);
+}
+
+.sd-colored {
+    color: var(--secondary-dark);
+}
+
+.hero-section {
+    background: radial-gradient(circle at center, #e5e5e5, #ffffff);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section button {
+    align-self: start;
+    width: auto;
+    border: none;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.hero-section button:hover {
+    background-color: var(--primary-light);
+    color: var(--text-light);
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        background-image: url("../imgs/Evidencia 2 - Hero Section.png");
+    }
+}
+
+/* Responsive Tableta */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Responsive Teléfono */
+@media (max-width: 767px) {
+    .hero-section img {
+        margin: auto;
+        margin-top: 2em;
+        width: 40%;
+    }
+}
