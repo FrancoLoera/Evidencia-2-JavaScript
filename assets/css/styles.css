@@ -100,6 +100,12 @@ a {
     background-color: var(--primary-light);
 }
 
+.image-h1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+
 .article-introduction a {
     background-color: var(--primary-dark);
     color: var(--text-light) !important;
@@ -122,9 +128,32 @@ a {
 
 /* Responsive Teléfono */
 @media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.6rem;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
     .hero-section img {
         margin: auto;
         margin-top: 2em;
         width: 40%;
+    }
+
+    .image-h1 {
+        width: 80px;
+        height: 80px;
     }
 }
