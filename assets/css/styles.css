@@ -7,6 +7,7 @@
     --secondary-light: #efd591;
     --text: #333;
     --text-light: #F8F8F8;
+    --text-gray: #b4b4b4;
 }
 
 * {
@@ -17,6 +18,45 @@
 body {
     background-color: #F8F8F8;
     font-family: 'Poppins', 'Arial';
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 2.8rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    width: auto;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
 }
 
 .pl-colored {
@@ -50,18 +90,23 @@ body {
     background-repeat: no-repeat;
 }
 
-.hero-section button {
+.hero-section a {
     align-self: start;
-    width: auto;
-    border: none;
     background-color: var(--primary-dark);
-    color: var(--text-light);
-    transition: 0.3s;
+    color: var(--text-light) !important;
 }
 
-.hero-section button:hover {
+.hero-section a:hover {
     background-color: var(--primary-light);
-    color: var(--text-light);
+}
+
+.article-introduction a {
+    background-color: var(--primary-dark);
+    color: var(--text-light) !important;
+}
+
+.article-introduction a:hover {
+    background-color: var(--primary-light);
 }
 
 @media (min-width: 1024px) {
