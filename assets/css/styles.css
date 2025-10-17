@@ -115,6 +115,15 @@ a {
     background-color: var(--primary-light);
 }
 
+.info-box {
+    transition: 0.5s;
+}
+
+.info-box:hover {
+    box-shadow: 0px 0px 10px 2px #efd49186 !important;
+    transform: translateY(-5px);
+}
+
 @media (min-width: 1024px) {
     .hero-section {
         background-image: url("../imgs/Evidencia 2 - Hero Section.png");
