@@ -21,9 +21,9 @@
             <div class="container d-flex">
                 <div class="row d-flex align-items-center justify-content-center justify-content-md-start">
                     <div class="col-12 col-md-6 text-center text-md-start">
-                        <p class="s-colored p-0 m-0 text-uppercase fw-bold fs-5 text-center text-md-start">Equipo 5</p>
+                        <p class="s-colored p-0 m-0 text-uppercase fw-bold fs-5 text-center text-md-start">Equipo 3</p>
                         <h1 class="p-colored pb-5">Portafolio JavaScript</h1>
-                        <a>Ver Proyectos<i class="bi bi-caret-right-fill ms-2"></i></a>
+                        <a class="a-button d-inline-block btn">Ver Proyectos<i class="bi bi-caret-right-fill ms-2"></i></a>
                     </div>
                     <div class="col-12 col-md-6 d-block d-lg-none pt-4 pt-md-0">
                         <img src="assets/imgs/Evidencia 2 - Slugcat.png" alt="The whatcher con pose pro" class="img-fluid mx-auto d-block">
@@ -36,6 +36,7 @@
         <section class="pt-5 pb-5 ps-3 pe-3 pt-md-5 pb-md-5">
             <!-- Introducción General -->
             <article class="article-introduction container">
+                <!-- Encabezado -->
                 <div class="row">
                     <div class="col-12 d-flex align-items-start">
                         <img src="assets/imgs/Evidencia 2 - JavaScript.png" alt="JavaScript" class="image-h1">
@@ -45,13 +46,14 @@
                         </div>
                     </div>
                 </div>
+                <!-- Contenido -->
                 <div class="row mt-4">
                     <div class="col-12 col-md-7 pe-md-5">
                         <p class="pb-3 pb-md-4"><b>JavaScript</b> es un lenguaje de programación interpretado, de alto nivel y multiparadigma, ampliamente utilizado en el desarrollo web.<br>
                         Fue creado en 1995 por Brendan Eich con el objetivo de dotar de <b>interactividad a las páginas web.</b><br>
                         Hoy en día, <b>JavaScript</b> no solo se usa en navegadores, sino también en el lado del <b>servidor (Node.js), en aplicaciones móviles, de escritorio y videojuegos.</b><br>
                         Es uno de los tres pilares fundamentales del desarrollo web, junto con HTML (estructura) y CSS (estilo).</p>
-                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Conocer más<i class="bi bi-caret-right-fill ms-2"></i></a>
+                        <a class="a-button d-inline-block btn" href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Conocer más<i class="bi bi-caret-right-fill ms-2"></i></a>
                     </div>
                     <div class="col-12 col-md-5 pt-5 pt-md-0">
                         <div class="ratio ratio-16x9">
@@ -62,15 +64,17 @@
             </article>
             <!-- Características Principales -->
             <article class="article-features container mt-5">
+                <!-- Encabezado -->
                 <div class="row">
                     <div class="col-12 d-flex align-items-start">
-                        <img src="assets/imgs/Evidencia 2 - Caracteristicas.png" alt="JavaScript" class="image-h1">
+                        <img src="assets/imgs/Evidencia 2 - Caracteristicas.png" alt="Características JavaScript" class="image-h1">
                         <div class="d-flex flex-column justify-content-center h-100 ps-3">
                             <h3 style="color: #b4b4b4;">JavaScript</h3>
                             <h2>Características Principales</h2>
                         </div>
                     </div>
                 </div>
+                <!-- Contenido -->
                 <div class="row mt-4 align-items-stretch row-gap-4">
                     <div class="col-12 col-sm-6 col-lg-4 d-flex">
                         <div class="info-box p-4 shadow-sm flex-fill rounded-3">
@@ -128,6 +132,287 @@
                     </div>
                 </div>
             </article>
+            <!-- Elementos Fundamentales -->
+            <article class="container mt-5">
+                <!-- Encabezado -->
+                <div class="row">
+                    <div class="col-12 d-flex align-items-start">
+                        <img src="assets/imgs/Evidencia 2 - Elementos.png" alt="Elementos Fundamentales JavaScript" class="image-h1">
+                        <div class="d-flex flex-column justify-content-center h-100 ps-3">
+                            <h3 style="color: #b4b4b4;">JavaScript</h3>
+                            <h2>Elementos Fundamentales</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenido -->
+                <div class="row row-gap-4 mt-4">
+                    <div class="col-12 col-md-6">
+                        <h3>1. Variables y Tipos de Datos</h3>
+                        <p>Las variables almacenan información.<br>
+                            Se declaran con <code class="bg-secondary rounded-1 p-1 text-light">var</code>, <code class="bg-secondary rounded-1 p-1 text-light">let</code> o <code class="bg-secondary rounded-1 p-1 text-light">const</code>:</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+// Ejemplo en JavaScript
+function saludar(nombre) {
+console.log("Hola, " + nombre + "!");
+}
+saludar("Cloud");
+                        </code></pre>
+                        <p>Tipos de datos básicos:<br>
+                            <code class="bg-secondary rounded-1 p-1 text-light">String</code>, <code class="bg-secondary rounded-1 p-1 text-light">Number</code>, <code class="bg-secondary rounded-1 p-1 text-light">Boolean</code>, <code class="bg-secondary rounded-1 p-1 text-light">Null</code>, <code class="bg-secondary rounded-1 p-1 text-light">Undefined</code>, <code class="bg-secondary rounded-1 p-1 text-light">Object</code> y <code class="bg-secondary rounded-1 p-1 text-light">Array</code>.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>2. Operadores</h3>
+                        <p>JavaScript cuenta con operadores aritméticos, de comparación y lógicos, entre otros:</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+let suma = 5 + 3;        // 8
+let esMayor = 10 > 3;    // true
+let condicion = true && false; // false
+                        </code></pre>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>3. Estructuras de Control</h3>
+                        <p>Permiten modificar el flujo de ejecución de un programa:</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+                        </code></pre>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>4. Funciones</h3>
+                        <p>Bloques de código reutilizables que ejecutan una tarea específica.</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+function saludar(nombre) {
+    return `Hola, ${nombre}!`;
+}
+console.log(saludar("Cloud"));
+                        </code></pre>
+                        <p>Desde ES6 también existen funciones flecha:</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+const sumar = (a, b) => a + b;
+                        </code></pre>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>5. Objetos y Arrays</h3>
+                        <p>Los objetos agrupan datos relacionados:</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+let persona = {
+    nombre: "Cloud",
+    edad: 22,
+    profesion: "Desarrollador"
+};
+                        </code></pre>
+                        <p>Los arrays son listas ordenadas:</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+let numeros = [10, 20, 30, 40];
+                        </code></pre>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>6. Eventos y DOM</h3>
+                        <p>JavaScript puede interactuar con el DOM (Document Object Model), que representa la estructura HTML.</p>
+                        <pre class="bg-dark text-light p-3 rounded-3"><code>
+document.getElementById("boton").addEventListener("click", () => {
+    alert("¡Hola desde JavaScript!");
+});
+                        </code></pre>
+                    </div>
+                </div>
+            </article>
+            <!-- Principales Aplicaciones -->
+            <article class="container mt-2">
+                <!-- Encabezado -->
+                <div class="row mt-4">
+                    <div class="col-12 d-flex align-items-start">
+                        <img src="assets/imgs/Evidencia 2 - Principales Aplicaciones.png" alt="Aplicaciones JavaScript" class="image-h1">
+                        <div class="d-flex flex-column justify-content-center h-100 ps-3">
+                            <h3 style="color: #b4b4b4;">JavaScript</h3>
+                            <h2>Principales Aplicaciones</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenido -->
+                <div class="row row-gap-5 mt-5">
+                    <div class="col-12 col-md-6">
+                        <h3>Desarrollo Frontend</h3>
+                        <p class="mt-3 mb-4">React, Vue, Angular.</p>
+                        <div class="d-flex align-items-stretch gap-4">
+                            <a href="https://es.react.dev/learn" target="_blank"><img src="assets/imgs/Evidencia 2 - React.png" alt="React" class="image-h3 rounded-2 p-2"></a>
+                            <a href="https://vuejs.org/guide/introduction.html" target="_blank"><img src="assets/imgs/Evidencia 2 - Vue.png" alt="Vue" class="image-h3 rounded-2 p-2"></a>
+                            <a href="https://angular.dev/overview" target="_blank"><img src="assets/imgs/Evidencia 2 - Angular.png" alt="Angular" class="image-h3 rounded-2 p-2"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>Desarrollo Backend</h3>
+                        <p class="mt-3 mb-4">Node.js.</p>
+                        <div class="d-flex align-items-stretch gap-4">
+                            <a href="https://nodejs.org/es/learn/getting-started/introduction-to-nodejs" target="_blank"><img src="assets/imgs/Evidencia 2 - Node.png" alt="Node" class="image-h3-long rounded-2 p-2"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>Aplicaciones Móviles</h3>
+                        <p class="mt-3 mb-4">React Native, Ionic.</p>
+                        <div class="d-flex align-items-stretch gap-4">
+                            <a href="https://reactnative.dev/docs/getting-started" target="_blank"><img src="assets/imgs/Evidencia 2 - React.png" alt="React" class="image-h3 rounded-2 p-2"></a>
+                            <a href="https://ionicframework.com/docs" target="_blank"><img src="assets/imgs/Evidencia 2 - Ionic.png" alt="Ionic" class="image-h3 rounded-2 p-2"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>Desarrollo de Videojuegos</h3>
+                        <p class="mt-3 mb-4">Phaser, Babylon.js.</p>
+                        <div class="d-flex align-items-stretch gap-4">
+                            <a href="https://phaser.io/tutorials/getting-started-with-phaser-launcher" target="_blank"><img src="assets/imgs/Evidencia 2 - Phaser.png" alt="Phaser" class="image-h3-long rounded-2 p-2"></a>
+                            <a href="https://doc.babylonjs.com/" target="_blank"><img src="assets/imgs/Evidencia 2 - Babylon.png" alt="Babylon" class="image-h3 rounded-2 p-2"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>Aplicaciones de Escritorio</h3>
+                        <p class="mt-3 mb-4">Electron.</p>
+                        <div class="d-flex align-items-stretch gap-4">
+                            <a href="https://www.electronjs.org/docs/latest" target="_blank"><img src="assets/imgs/Evidencia 2 - Electron.png" alt="Electron" class="image-h3-long rounded-2 p-2"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Prácticas -->
+        <section class="task-section pt-5 pb-5 pe-3 ps-3">
+            <div class="container align-items-center">
+                <div class="row justify-content-center row-gap-3">
+                    <div class="col-12 mb-4">
+                        <h2 class="text-center" style="color: white;">Prácticas</h2>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-1-square-fill fs-2"></i>
+                            <h3>Práctica 1</h3>
+                            <p class="mt-3 text-center" style="color: white;">Calculadora</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-2-square-fill fs-2"></i>
+                            <h3>Práctica 2</h3>
+                            <p class="mt-3 text-center" style="color: white;">Tablas de Multiplicar</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-3-square-fill fs-2"></i>
+                            <h3>Práctica 3</h3>
+                            <p class="mt-3 text-center" style="color: white;">Tipo de Triángulo</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-4-square-fill fs-2"></i>
+                            <h3>Práctica 4</h3>
+                            <p class="mt-3 text-center" style="color: white;">Suma Pares e Impares</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-5-square-fill fs-2"></i>
+                            <h3>Práctica 5</h3>
+                            <p class="mt-3 text-center" style="color: white;">Tabla de Registros</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-6-square-fill fs-2"></i>
+                            <h3>Práctica 6</h3>
+                            <p class="mt-3 text-center" style="color: white;">Laboratiorio Funciones Predeterminadas</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-7-square-fill fs-2"></i>
+                            <h3>Práctica 7</h3>
+                            <p class="mt-3 text-center" style="color: white;">Número Secreto</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-8-square-fill fs-2"></i>
+                            <h3>Práctica 8</h3>
+                            <p class="mt-3 text-center" style="color: white;">Conversor de Sistemas Numéricos</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <i class="bi bi-9-square-fill fs-2"></i>
+                            <h3>Práctica 9</h3>
+                            <p class="mt-3 text-center" style="color: white;">Promedio y Calificaciones</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="bi bi-1-square-fill fs-2"></i>
+                                <i class="bi bi-0-square-fill fs-2"></i>
+                            </div>
+                            <h3>Práctica 10</h3>
+                            <p class="mt-3 text-center" style="color: white;">Contador de Votos</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center flex-fill">
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="bi bi-1-square-fill fs-2"></i>
+                                <i class="bi bi-1-square-fill fs-2"></i>
+                            </div>
+                            <h3>Práctica 11</h3>
+                            <p class="mt-3 text-center" style="color: white;">Cambio de Color</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box flex-fill pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center">
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="bi bi-1-square-fill fs-2"></i>
+                                <i class="bi bi-2-square-fill fs-2"></i>
+                            </div>
+                            <h3>Práctica 12</h3>
+                            <p class="mt-3 text-center" style="color: white;">Cambiar Propiedades de Texto</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box flex-fill pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center">
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="bi bi-1-square-fill fs-2"></i>
+                                <i class="bi bi-3-square-fill fs-2"></i>
+                            </div>
+                            <h3>Práctica 13</h3>
+                            <p class="mt-3 text-center" style="color: white;">Ocultar y Mostrar Elemento</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box flex-fill pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center">
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="bi bi-1-square-fill fs-2"></i>
+                                <i class="bi bi-4-square-fill fs-2"></i>
+                            </div>
+                            <h3>Práctica 14</h3>
+                            <p class="mt-3 text-center" style="color: white;">Loader</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="task-box flex-fill pl-colored rounded-2 ps-3 pe-3 pt-5 pb-5 d-flex flex-column align-items-center justify-content-center">
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="bi bi-1-square-fill fs-2"></i>
+                                <i class="bi bi-5-square-fill fs-2"></i>
+                            </div>
+                            <h3>Práctica 15</h3>
+                            <p class="mt-3 text-center" style="color: white;">Fondo Animado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
