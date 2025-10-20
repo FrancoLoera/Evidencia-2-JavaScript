@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6. Laboratiorio Funciones Predeterminadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container p-5">
+        <h1 class="mb-3 p-colored">Ejercicio 6. Laboratiorio Funciones Predeterminadas</h1>
+        <div class="row">
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>Math.abs()</h2>
+                    <p class="mb-1">Devuelve el valor absoluto de un número (sin signo negativo).</p>
+                    <div>Número:<input type="number" id="abs" class="ms-2"></div>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="math_abs()">Empezar</button></div>
+                </form> 
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>Math.ceil()</h2>
+                    <p class="mb-1">Redondea un número hacia arriba al entero más cercano.</p>
+                    <div>Número:<input type="number" id="ceil" class="ms-2"></div>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="math_ceil()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>Math.random()</h2>
+                    <p class="mb-1">Genera un número aleatorio entre 0 (incluido) y 1 (excluido).</p>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="math_random()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>Math.max() / Math.min()</h2>
+                    <p class="mb-1">Devuelven el mayor o menor valor de una lista de números.</p>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="math_max_min()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>Number.isNaN()</h2>
+                    <p class="mb-1">Verifica si un valor no es un número (NaN).</p>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="number_nan()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>toFixed()</h2>
+                    <p class="mb-1">Redondea un número a una cantidad específica de decimales y lo devuelve como texto.</p>
+                    <div>Número:<input type="number" id="fixed" class="ms-2"></div>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="to_fixed()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>Date()</h2>
+                    <p class="mb-1">Crea un objeto con la fecha y hora actual del sistema.</p>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="date()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>String.length</h2>
+                    <p class="mb-1">Devuelve la cantidad de caracteres que tiene una cadena.</p>
+                    <div>Cadena:<input type="text" id="string" class="ms-2"></div>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="string_length()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>String.toUpperCase() / String.toLowerCase()</h2>
+                    <p class="mb-1">Convierte una cadena a mayúsculas o minúsculas.</p>
+                    <div>Cadena:<input type="text" id="string2" class="ms-2"></div>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="string_case()">Empezar</button></div>
+                </form>
+            </div>
+            <div class="col-6 d-flex">
+                <form class="d-flex flex-column row-gap-2">
+                    <h2>Math.floor()</h2>
+                    <p class="mb-1">Redondea un número hacia abajo al entero más cercano.</p>
+                    <div>Número:<input type="number" id="floor" class="ms-2"></div>
+                    <div><button type="button" class="btn btn-primary mb-5" onclick="math_floor()">Empezar</button></div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
