@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1. Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container p-5">
+        <h1 class="mb-3 p-colored">Ejercicio 1. Calculadora</h1>
+        <form class="d-flex flex-column row-gap-2">
+            <div>Número 1:<input type="number" id="num1" class="ms-1" required></div>
+            <div>Número 2:<input type="number" id="num2" class="ms-1" required></div>
+            <div>Operación:
+                <select id="operaciones">
+                    <option value="sumar">Sumar</option>
+                    <option value="restar">Restar</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+                    <option value="residuo">Residuo</option>
+                </select>
+            </div>
+            <div><button type="button" class="btn btn-primary" onclick="calcular()">Aceptar</button></div>
+        </form>
+    </main>
+</body>
+</html>
