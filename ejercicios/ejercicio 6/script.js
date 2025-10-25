@@ -7,7 +7,7 @@ function math_abs() {
 function math_ceil() {
     num = parseFloat(document.getElementById("ceil").value);
 
-    alert(`El valor absoluto de ${num} es ${Math.ceil(num)}`);
+    alert(`El número ${num} redondeado hacia arriba es ${Math.ceil(num)}`);
 }
 
 function math_random() {
